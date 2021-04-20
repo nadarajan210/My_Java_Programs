@@ -1,0 +1,25 @@
+class calc
+{
+	int num1 , num2;
+	int result;
+	public void add(){
+		result = num1 + num2;
+		System.out.println("Addition of num1 and num2 = " + result);
+	}
+}
+
+public class FirstCode {
+
+	public static void main(String[] args) {
+		calc ob1=new calc();
+		ob1.num1 = 5;
+		ob1.num2 = 9;
+		ob1.add();
+		
+	}
+
+}
+
+/*
+Addition of num1 and num2 = 14
+*/
