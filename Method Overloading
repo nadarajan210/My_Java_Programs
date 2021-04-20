@@ -1,0 +1,39 @@
+class calc
+{
+    int num1;
+    int num2;
+	int result;
+
+	public void add(){
+		result = num1 + num2;
+		System.out.println("Addition of num1 and num2 = " + result);
+	}
+	public void add(int a) {
+		result = a + 6;
+		System.out.println("The Addition value is = " + result);
+	}
+	public void add(int a,int b){
+		result = a + b;
+		System.out.println("The addition of given two numbers is = " + result);
+	}
+}
+
+public class FirstCode {
+
+	public static void main(String[] args) {
+		calc ob1=new calc();
+		ob1.num1 = 5;
+		ob1.num2 = 9;
+		ob1.add();
+		ob1.add(5);
+		ob1.add(66,9);
+		
+	}
+
+}
+
+/*
+Addition of num1 and num2 = 14
+The Addition value is = 11
+The addition of given two numbers is = 75
+*/
