@@ -1,0 +1,31 @@
+/* INTERFFACE */
+interface myinterface{
+	void write();                   //byy default all the methods inside interface are abstract
+}
+
+class A implements myinterface{                      //with the help  of interface we can achieve multiple inheritance,because java does'n support Multiple inheritance
+	public void write() {
+		System.out.println("This is A Class");
+	}
+}
+
+class B implements myinterface{
+	public void write() {
+		System.out.println("This is B Class");
+	}
+}
+public class inter {
+
+	public static void main(String[] args) {
+		myinterface obj = new A();
+		myinterface obj1 = new B();
+		obj.write();
+		obj1.write();
+	}
+
+}
+
+/* 
+This is A Class
+This is B Class
+*/
