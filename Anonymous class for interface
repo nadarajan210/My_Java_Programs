@@ -1,0 +1,22 @@
+interface myinterface{
+	void write();
+}
+
+public class inter {
+
+	public static void main(String[] args) {
+		myinterface obj = new myinterface() {
+			public void write() {
+				System.out.println("Im the Best");
+			}
+		};
+		obj.write();
+	}
+
+}
+
+// we can create object for interface by using the anonymous class..
+
+/*
+Im the Best
+*/
