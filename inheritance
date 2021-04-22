@@ -1,0 +1,65 @@
+/* Single Inheritance */ 
+class animals{
+	public void anim() {
+		
+		System.out.println("This is a animal");
+	}
+}
+class dog extends animals{
+	public void DogM() {
+		System.out.println("This is a Dog....!");
+	}
+}
+
+public class inheritance {
+
+	public static void main(String[] args) {
+		dog abj = new dog();
+		abj.DogM();
+		abj.anim();
+
+	}
+
+}
+
+/*
+This is a Dog....!
+This is a animal
+*/
+
+/*  Multiple Inheritance */
+
+class animals{
+	public void anim() {
+		
+		System.out.println("This is a animal");
+	}
+}
+class dog extends animals{
+	public void DogM() {
+		System.out.println("This is a Dog....!");
+	}
+}
+class cat extends dog{
+	public void catM() {
+		System.out.println("This is a cat....!");
+	}
+}
+
+public class inheritance {
+
+	public static void main(String[] args) {
+		cat abj = new cat();
+		abj.DogM();
+		abj.anim();
+		abj.catM();
+
+	}
+
+}
+
+/*
+This is a Dod....!
+This is a animal
+This  is a cat....!
+*/
