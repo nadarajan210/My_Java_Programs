@@ -1,0 +1,34 @@
+class school
+{
+   int stuid;
+   int Class;
+   static String Prince;
+   
+   public void show() {
+	   System.out.println(stuid + ":" + Class + ":" + Prince);
+   }
+}
+
+public class FirstCode {
+
+	public static void main(String[] args) {
+		school std1 = new school();
+		school std2 = new school();
+		std1.stuid = 1;
+		std1.Class = 9;
+		std2.stuid = 2;
+		std2.Class = 8;
+		school.Prince = "Arivu"; //Static variable can be called without object
+		std1.show();
+		std2.show();
+		
+		
+	}
+
+}
+
+
+/*
+1:9:Arivu
+2:8:Arivu
+*/
