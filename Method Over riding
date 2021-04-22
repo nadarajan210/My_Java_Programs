@@ -1,0 +1,61 @@
+/* Method Overriding */
+class animals{
+	public void anim() {
+		
+		System.out.println("This is a animal");
+	}
+}
+class dog extends animals{                     
+	public void anim() {
+		System.out.println("This is a Dod....!");
+	}
+}
+
+public class inheritance {
+
+	public static void main(String[] args) {
+		dog abj = new dog();
+		abj.anim();
+
+	}
+
+}
+
+/* Here super and sub both having  same  method with same name . when we call that mmethod by the object of sub class it will execute the subclass
+method . it will over ride the super class method .  This  was known as Method overriding.  if we want to execute super class method in this case, we need to use super keyword.
+That super keyword can be placed inside neither the sub method or else in sub class constructor.*/
+
+/*
+This is Dog....!
+*/
+
+/* Super  Keyword */
+class animals{
+	public void anim() {
+		
+		System.out.println("This is a animal");
+	}
+}
+class dog extends animals{
+	public dog() {
+		super.anim();
+	}
+	public void anim() {
+		System.out.println("This is a Dod....!");
+	}
+}
+
+public class inheritance {
+
+	public static void main(String[] args) {
+		dog abj = new dog();
+		abj.anim();
+
+	}
+
+}
+
+/*
+This is a animal
+This is a Dod....!
+*/
