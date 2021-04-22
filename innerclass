@@ -1,0 +1,28 @@
+class outer{
+	int a;
+	int b;
+	public void show() {
+		System.out.println("This was outer Class");
+	}
+	
+	class inner{
+		public void display() {
+			System.out.println("This was outer Class");
+		}
+	}
+}
+public class innerdemo {
+
+	public static void main(String[] args) {
+		outer obj = new outer();
+		outer.inner obj1 = obj.new inner();
+		obj.show();
+		obj1.display();
+	}
+
+}
+
+/*
+This was outer Class
+This was inner Class
+*/
