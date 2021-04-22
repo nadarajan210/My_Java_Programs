@@ -1,0 +1,37 @@
+/* Binding of data by using the methods  is known as Encapsulation */
+
+class abcd{
+	private int a;
+	private int b;
+	public int getA() {
+		return a;
+	}
+	public void setA(int a) {
+		this.a = a;
+	}
+	public int getB() {
+		return b;
+	}
+	public void setB(int b) {
+		this.b = b;
+	}
+	
+}
+
+public class encapls {
+
+	public static void main(String[] args) {
+		abcd obj = new abcd();
+		obj.setA(5);
+		obj.setB(89);
+		System.out.println("The A is  : " + obj.getA());
+		System.out.println("The B is : " + obj.getB());
+
+	}
+
+}
+
+/*
+The A is : 5
+The B is : 89
+*/
