@@ -1,0 +1,25 @@
+public class myclass {
+
+	public static void main(String[] args) {
+		try {
+			int i=0;
+			int j=8;
+			try{
+				int result = j/i;
+				
+			}
+			catch (Exception e) {
+				System.out.println("This is Catch block");			}
+		}
+		finally {
+			System.out.println("This is Finally block");
+		}
+
+	}
+
+}
+
+/*
+This is Catch block
+This is Finally block
+*/
