@@ -1,0 +1,191 @@
+import java.util.Scanner;
+class inpuut{
+	Scanner obj = new Scanner(System.in);
+	void choice() {
+		System.out.println("             Calculator            ");
+		System.out.println("===================================");
+		System.out.println("Enter Your Choice  -> ");
+		System.out.println("1.) Addition");
+		System.out.println("2.) Subraction");
+		System.out.println("3.) Multiplication");
+		System.out.println("4.) Division");
+		System.out.println("5.) Modulous");
+		System.out.println("6.) Exit");
+		int n = obj.nextInt();
+		switch(n) {
+		case 1:
+			add();
+			choice();
+			break;
+		case 2:
+			sub();
+			choice();
+			break;
+		case 3:
+			multi();
+			choice();
+			break;
+		case 4:
+			div();
+			choice();
+			break;
+		case 5:
+			mod();
+			choice();
+			break;
+		case 6:
+			System.out.println("--------------Thank You-----------------");
+			break;
+		default:
+			System.out.println("Please Enter any one of the above choice......");
+			choice();
+			break;
+		}
+	}
+	void add() {
+		System.out.print("\n Enter the first number -> ");
+		int num1 = obj.nextInt();
+		System.out.print("\n Enter the secound number -> ");
+		int num2 = obj.nextInt();
+		int result = num1 + num2;
+		System.out.println("The Addition of given two numbers is : " + result + "\n");
+	}
+	void sub() {
+		System.out.print("\n Enter the first number -> ");
+		int num1 = obj.nextInt();
+		System.out.print("\n Enter the secound number -> ");
+		int num2 = obj.nextInt();
+		int result = num1 - num2;
+		System.out.println("The Subraction of given two numbers is : " + result + "\n");
+	}
+	void multi() {
+		System.out.print("\n Enter the first number -> ");
+		int num1 = obj.nextInt();
+		System.out.print("\n Enter the secound number -> ");
+		int num2 = obj.nextInt();
+		int result = num1 * num2;
+		System.out.println("The Multiplication of given two numbers is : " + result + "\n");
+	}
+	void div() {
+		System.out.print("\n Enter the first number -> ");
+		int num1 = obj.nextInt();
+		System.out.print("\n Enter the secound number -> ");
+		int num2 = obj.nextInt();
+		int result = num1 / num2;
+		System.out.println("The Division of given two numbers is : " + result + "\n");
+	}
+	void mod() {
+		System.out.print("\n Enter the first number -> ");
+		int num1 = obj.nextInt();
+		System.out.print("\n Enter the secound number -> ");
+		int num2 = obj.nextInt();
+		int result = num1 % num2;
+		System.out.println("The Modulus Value of given two numbers is : " + result + "\n");
+	}
+}
+public class calc {
+	public static void main(String[] args) {
+	inpuut ob1 = new inpuut();
+	ob1.choice();	
+	}
+
+}
+
+
+
+
+
+/*
+//OUTPUT
+             Calculator            
+===================================
+Enter Your Choice  -> 
+1.) Addition
+2.) Subraction
+3.) Multiplication
+4.) Division
+5.) Modulous
+6.) Exit
+1
+
+ Enter the first number -> 5
+
+ Enter the secound number -> 9
+The Addition of given two numbers is : 14
+
+             Calculator            
+===================================
+Enter Your Choice  -> 
+1.) Addition
+2.) Subraction
+3.) Multiplication
+4.) Division
+5.) Modulous
+6.) Exit
+2
+
+ Enter the first number -> 9
+
+ Enter the secound number -> 3
+The Subraction of given two numbers is : 6
+
+             Calculator            
+===================================
+Enter Your Choice  -> 
+1.) Addition
+2.) Subraction
+3.) Multiplication
+4.) Division
+5.) Modulous
+6.) Exit
+3
+
+ Enter the first number -> 5
+
+ Enter the secound number -> 5
+The Multiplication of given two numbers is : 25
+
+             Calculator            
+===================================
+Enter Your Choice  -> 
+1.) Addition
+2.) Subraction
+3.) Multiplication
+4.) Division
+5.) Modulous
+6.) Exit
+4
+
+ Enter the first number -> 6
+
+ Enter the secound number -> 3
+The Division of given two numbers is : 2
+
+             Calculator            
+===================================
+Enter Your Choice  -> 
+1.) Addition
+2.) Subraction
+3.) Multiplication
+4.) Division
+5.) Modulous
+6.) Exit
+5
+
+ Enter the first number -> 8
+
+ Enter the secound number -> 5
+The Modulus Value of given two numbers is : 3
+
+             Calculator            
+===================================
+Enter Your Choice  -> 
+1.) Addition
+2.) Subraction
+3.) Multiplication
+4.) Division
+5.) Modulous
+6.) Exit
+6
+--------------Thank You-----------------
+*/
