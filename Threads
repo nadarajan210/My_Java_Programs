@@ -1,0 +1,101 @@
+/*  here we extend the Thread class */
+
+class hero extends Thread{
+	public void  run() {
+		for(int i=1;i<=5;i++) {
+			System.out.println("Who is the Hero....");
+			try {Thread.sleep(1000);}catch(Exception e) {}
+		}
+	}
+}
+
+class me extends  Thread{
+	public void run() {
+		for (int i=1;i<=5;i++) {
+			System.out.println("Nadarajan_S");
+			try {Thread.sleep(1000);}catch(Exception e) {}
+		}
+	}
+}
+
+public class myclass {
+
+	public static void main(String[] args) {
+		hero obj1=new hero();
+		me obj2=new me();
+		obj1.start();
+		try {Thread.sleep(10);}catch(Exception e) {}
+		obj2.start();
+		
+		
+		
+	}
+
+}
+
+/*
+Who is the Hero....
+Nadarajan_S
+Who is the Hero....
+Nadarajan_S
+Who is the Hero....
+Nadarajan_S
+Who is the Hero....
+Nadarajan_S
+Who is the Hero....
+Nadarajan_S
+*/
+
+
+
+/* Runnable Interface */
+class hero implements Runnable{
+	public void  run() {
+		for(int i=1;i<=5;i++) {
+			System.out.println("Who is the Hero....");
+			try {Thread.sleep(1000);}catch(Exception e) {}
+		}
+	}
+}
+
+class me implements Runnable{
+	public void run() {
+		for (int i=1;i<=5;i++) {
+			System.out.println("Nadarajan_S");
+			try {Thread.sleep(1000);}catch(Exception e) {}
+		}
+	}
+}
+
+public class myclass {
+
+	public static void main(String[] args) {
+		hero obj1=new hero();
+		me obj2=new me();
+		Thread t1=new Thread(obj1);
+		Thread t2=new Thread(obj2);
+		t1.start();
+		try {Thread.sleep(10);}catch(Exception e) {}
+		t2.start();
+		
+		
+		
+	}
+
+}
+
+
+
+/*
+Who is the Hero....
+Nadarajan_S
+Who is the Hero....
+Nadarajan_S
+Who is the Hero....
+Nadarajan_S
+Who is the Hero....
+Nadarajan_S
+Who is the Hero....
+Nadarajan_S
+*/
+
