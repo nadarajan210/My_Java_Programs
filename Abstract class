@@ -19,6 +19,7 @@ public class abstractclass {
 		pen obj = new pen();
 		obj.display();
 		obj.show();
+		System.out.println("Pencil Writs in grey color");
 
 	}
 
