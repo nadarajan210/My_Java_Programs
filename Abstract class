@@ -3,6 +3,7 @@ abstract class writer{
 	public abstract void display();
  }
 
+
 class pen extends writer{ 
 	public void show() {
 		System.out.println("Pen Wrints in blue color");
